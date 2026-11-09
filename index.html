@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Desarrollo de videojuegos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#contenido">Saltar al contenido</a>
+        <p>
+            <a>
+                <span>Desarrollo de videojuegos</span>
+                <span class="marca-subtitulo">Diseño y programación</span>
+            </a>
+        </p>
+        <button class="boton-menu" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" hidden>
+            <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="menu-principal" class="menu-temas" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
+                <li>
+                    <details>
+                        <summary>Proceso</summary>
+                        <ul>
+                            <li><a href="etapas.html">Etapas</a></li>
+                            <li><a href="equipo.html">Equipo</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Creación</summary>
+                        <ul>
+                            <li><a href="arte.html">Arte y animación</a></li>
+                            <li><a href="programacion.html">Programación</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="generos.html">Géneros y plataformas</a></li>
+                <li><a href="autor.html">Acerca de mí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section class="portada-inicio" aria-labelledby="titulo-inicio">
+            <div>
+                <h1 id="titulo-inicio">Desarrollo de videojuegos</h1>
+                <p>El desarrollo de videojuegos es el proceso de convertir una idea en una experiencia interactiva. El equipo define qué puede hacer el jugador, crea un prototipo para probar las reglas y luego integra el código, los gráficos, las animaciones y el sonido. El trabajo abarca desde la planificación hasta el lanzamiento y las actualizaciones posteriores.</p>
+            </div>
+            <img src="imagenes/portada-videojuegos.png" alt="Persona trabajando en un personaje de videojuego con un programa de modelado 3D">
+        </section>
+
+        <section>
+            <h2>Funciones de un desarrollador de videojuegos</h2>
+            <p>Las responsabilidades dependen del tamaño del equipo y de las necesidades del proyecto.</p>
+            <ul>
+                <li><strong>Programación.</strong> Implementa los controles, las reglas y la física del juego. También puede programar el comportamiento de los enemigos.</li>
+                <li><strong>Diseño de juego.</strong> Colabora en la definición de mecánicas, niveles e interacciones y ayuda a comprobar si las ideas son viables.</li>
+                <li><strong>Integración de recursos.</strong> Incorpora gráficos, animaciones y sonidos para que se activen en el momento correcto.</li>
+                <li><strong>Uso de motores de juego.</strong> Utiliza herramientas como Unity o Unreal Engine para crear escenas y gestionar elementos como los gráficos y las colisiones.</li>
+                <li><strong>Trabajo en equipo.</strong> Coordina la implementación con artistas, guionistas, diseñadores y especialistas de sonido.</li>
+                <li><strong>Pruebas y corrección de errores.</strong> Reproduce fallos, corrige su causa y comprueba que la solución funcione.</li>
+                <li><strong>Adaptación a plataformas.</strong> Ajusta controles y rendimiento para las plataformas del proyecto, como computadoras, consolas, navegadores o celulares.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ventajas y desventajas de desarrollar videojuegos</h2>
+            <h3>Ventajas</h3>
+            <ul>
+                <li><strong>Combina creatividad y tecnología.</strong> Permite convertir una historia o una regla en algo que el jugador puede explorar.</li>
+                <li><strong>Desarrolla habilidades variadas.</strong> Un proyecto da práctica en programación, solución de problemas y colaboración con otras disciplinas.</li>
+                <li><strong>Abre distintos caminos profesionales.</strong> Las habilidades pueden aplicarse en estudios de videojuegos, proyectos independientes o equipos que crean experiencias de realidad virtual.</li>
+            </ul>
+
+            <h3>Desventajas</h3>
+            <ul>
+                <li><strong>Requiere tiempo y recursos.</strong> Cada nivel, personaje o plataforma adicional aumenta el trabajo de producción y pruebas.</li>
+                <li><strong>Los errores pueden ser difíciles de reproducir.</strong> Un fallo puede aparecer solo con cierta combinación de acciones o en un dispositivo específico.</li>
+                <li><strong>Ajustar la dificultad exige iteración.</strong> Puede ser necesario cambiar un nivel varias veces para que el reto sea comprensible y entretenido.</li>
+            </ul>
+        </section>
+
+
+        <section class="guia-practica">
+            <h2>Explora la guía</h2>
+            <p>Cada área responde una pregunta distinta sobre cómo se crea un videojuego.</p>
+            <ul class="filas-guia tarjetas-inicio">
+                <li>
+                    <span class="guia-numero">01 / Proceso</span>
+                    <h3>El proceso</h3>
+                    <p>Desde el primer prototipo hasta el lanzamiento y sus actualizaciones.</p>
+                    <a href="etapas.html">Ver las etapas →</a>
+                </li>
+                <li>
+                    <span class="guia-numero">02 / Diseño visual</span>
+                    <h3>Arte y animación</h3>
+                    <p>Cómo se construye la identidad visual y se comunica lo que ocurre en pantalla.</p>
+                    <a href="arte.html">Ver arte y animación →</a>
+                </li>
+                <li>
+                    <span class="guia-numero">03 / Código</span>
+                    <h3>Programación</h3>
+                    <p>Qué aporta un motor y cómo se implementan las reglas del juego.</p>
+                    <a href="programacion.html">Ver herramientas →</a>
+                </li>
+                <li>
+                    <span class="guia-numero">04 / Tipos de juego</span>
+                    <h3>Géneros y plataformas</h3>
+                    <p>Cómo cambian los controles y la experiencia según el tipo de juego y el dispositivo.</p>
+                    <a href="generos.html">Explorar los géneros →</a>
+                </li>
+                <li>
+                    <span class="guia-numero">05 / Colaboración</span>
+                    <h3>El equipo</h3>
+                    <p>Cómo se reparten las tareas y se revisa el trabajo antes de publicar.</p>
+                    <a href="equipo.html">Conocer las funciones →</a>
+                </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="titulo-referencias">
+            <h2 id="titulo-referencias">Referencias bibliográficas</h2>
+            <ul>
+                <li id="algo"><a href="https://algocodingexperts.com/es/que-es-el-desarrollo-de-videojuegos/">Algo Coding Experts. ¿Qué es el desarrollo de videojuegos?</a></li>
+                <li id="campus"><a href="https://creativecampus.universidadeuropea.com/blog/desarrollo-videojuegos/">Creative Campus. Desarrollo de videojuegos: etapas y entornos.</a></li>
+                <li id="unir"><a href="https://peru.unir.net/revista/ingenieria/desarrollador-videojuegos/">UNIR Perú. Desarrollador de videojuegos: qué es, funciones y cómo formarte.</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollo de Software V · Universidad Tecnológica de Panamá</p>
+    </footer>
+</body>
+</html>
