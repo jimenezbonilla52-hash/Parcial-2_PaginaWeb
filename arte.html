@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte y animación | Desarrollo de videojuegos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#contenido">Saltar al contenido</a>
+        <p>
+            <a>
+                <span>Desarrollo de videojuegos</span>
+                <span class="marca-subtitulo">Diseño y programación</span>
+            </a>
+        </p>
+        <button class="boton-menu" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" hidden>
+            <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="menu-principal" class="menu-temas" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <details>
+                        <summary>Proceso</summary>
+                        <ul>
+                            <li><a href="etapas.html">Etapas</a></li>
+                            <li><a href="equipo.html">Equipo</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details class="grupo-activo">
+                        <summary>Creación</summary>
+                        <ul>
+                            <li><a href="arte.html" aria-current="page">Arte y animación</a></li>
+                            <li><a href="programacion.html">Programación</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="generos.html">Géneros y plataformas</a></li>
+                <li><a href="autor.html">Acerca de mí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <p class="categoria-pagina">Creación del juego</p>
+        <h1>Cómo se crea un personaje</h1>
+        <p>El arte establece el aspecto del juego y comunica información al jugador.</p>
+        <section class="recursos-visuales">
+            <h2>¿Qué áreas componen el desarrollo de videojuegos?</h2>
+            <p>El desarrollo de videojuegos combina distintas áreas de conocimiento. El arte y la animación crean los recursos visuales que se integran en el motor del juego. La programación hace que el juego funcione y responda a las acciones del jugador.</p>
+            <div class="galeria-arte">
+                <article class="tarjeta-arte">
+                    <img src="imagenes/concept-art.png" alt="Bocetos de un personaje con armadura, expresiones y vistas desde distintos ángulos" width="960" height="850" loading="lazy">
+                    <div class="tarjeta-arte-texto">
+                        <h3>Concept Art</h3>
+                        <p>Los bocetos iniciales fijan el estilo visual del juego. El equipo explora la silueta de los personajes, el aspecto de los escenarios y objetos, y la paleta de colores. Las propuestas elegidas sirven de guía para quienes construyen los recursos finales.</p>
+                        <p class="credito-arte">Proyecto de Nerea Jiménez, publicado por Animum.</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta-arte">
+                    <img src="imagenes/modelado-3d.png" alt="Personaje con armadura que muestra el acabado final y la malla del modelo" width="960" height="850" loading="lazy">
+                    <div class="tarjeta-arte-texto">
+                        <h3>Modelado y texturizado 3D</h3>
+                        <p>El modelado convierte los bocetos en figuras tridimensionales. En los personajes se definen la anatomía, el vestuario y los accesorios. En los escenarios se construyen espacios y objetos acordes con la historia y el recorrido del jugador. Las texturas aportan detalles de superficie, como desgaste, costuras o vetas.</p>
+                        <p class="credito-arte">Proyecto de Andoni Yunquera, publicado por Animum.</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta-arte">
+                    <img src="imagenes/rigging.png" alt="Personaje 3D con controles de animación alrededor del cuerpo y del rostro" width="960" height="730" loading="lazy">
+                    <div class="tarjeta-arte-texto">
+                        <h3>Rigging</h3>
+                        <p>El rigging prepara el modelo para la animación. Se crea un esqueleto digital y se añaden controles para mover partes del cuerpo y del rostro. Al mover una articulación, la malla se deforma con ella para que el personaje pueda adoptar distintas poses.</p>
+                        <p class="credito-arte">Proyecto de Gemma Verdeguer, publicado por Animum.</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta-arte">
+                    <img src="imagenes/integracion-motor.png" width="2000" height="1500" alt="Escena 3D con un robot, luces y una cuadrícula dentro del editor de un motor de videojuegos" loading="lazy">
+                    <div class="tarjeta-arte-texto">
+                        <h3>Animación e integración en el motor</h3>
+                        <p>Con el modelo preparado, se crean movimientos como correr, saltar o aterrizar. El equipo incorpora estas animaciones al motor y comprueba cómo se activan durante la partida.</p>
+                        <p class="credito-arte">Vista de una escena 3D dentro del editor del motor.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section>
+            <h2>Qué comunica el arte en pantalla</h2>
+            <p>Durante una partida, el jugador necesita reconocer qué está pasando y decidir cómo actuar. El arte y la interfaz le dan pistas como estas:</p>
+            <ul>
+                <li><strong>Estado de la partida.</strong> Una barra con el valor «75 de 100» permite saber cuánta salud queda con solo mirar la pantalla.</li>
+                <li><strong>Acciones del personaje.</strong> Una pose con las rodillas flexionadas puede indicar que el personaje va a saltar. En 2D, esa pose se dibuja como parte de una secuencia. En 3D, se crea moviendo las articulaciones del modelo.</li>
+                <li><strong>Caminos y objetos importantes.</strong> Un corredor iluminado puede señalar por dónde avanzar. Una silueta reconocible y un buen contraste ayudan a distinguir un objeto interactivo del fondo.</li>
+            </ul>
+        </section>
+
+        <section class="guia-practica">
+            <h2>Qué aporta cada recurso a la partida</h2>
+            <p>El aspecto visual también ayuda al jugador a reconocer acciones, objetos y cambios de estado.</p>
+            <ul class="filas-guia guia-vertical">
+                <li>
+                    <span class="guia-numero" aria-hidden="true">01</span>
+                    <div>
+                        <h3>Personajes</h3>
+                        <p>La silueta ayuda a reconocerlos a distancia. Las poses y las transiciones de animación muestran cuándo empiezan o terminan una acción.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="guia-numero" aria-hidden="true">02</span>
+                    <div>
+                        <h3>Escenarios</h3>
+                        <p>La composición y la iluminación pueden orientar la mirada hacia un punto importante. El equipo revisa si el fondo dificulta distinguir objetos interactivos.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="guia-numero" aria-hidden="true">03</span>
+                    <div>
+                        <h3>Interfaz</h3>
+                        <p>Los iconos y los textos explican el estado del juego. Un aviso de daño, por ejemplo, puede combinar un símbolo, un sonido y un cambio visual.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="titulo-referencias">
+            <h2 id="titulo-referencias">Referencias bibliográficas</h2>
+            <ul>
+                <li id="animum"><a href="https://www.animum3d.com/blog/como-se-crean-videojuegos/">Animum. ¿Cómo se crean los videojuegos? Descubre las áreas que lo hacen posible.</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollo de Software V · Universidad Tecnológica de Panamá</p>
+    </footer>
+</body>
+</html>
