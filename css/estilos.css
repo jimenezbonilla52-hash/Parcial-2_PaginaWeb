@@ -1,0 +1,675 @@
+:root {
+    color-scheme: dark;
+    --fondo: #0d0b12;
+    --panel: #1b1428;
+    --morado: #c4a0ff;
+    --violeta: #7442bd;
+    --texto: #f8f5ff;
+    --secundario: #d4cbe1;
+    --borde: #514167;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(ellipse 48rem 32rem at 87% 5rem, rgba(151, 91, 236, 0.19), transparent 76%), var(--fondo);
+    color: var(--texto);
+    font: 1rem/1.65 system-ui, sans-serif;
+}
+
+a {
+    color: var(--morado);
+    text-underline-offset: 0.2em;
+}
+
+a:hover {
+    color: var(--texto);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--morado);
+    outline-offset: 4px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    min-height: 6.25rem;
+    padding: 1.25rem max(1.25rem, calc((100% - 75rem) / 2));
+    background: rgba(13, 11, 18, 0.28);
+    border-bottom: 1px solid var(--borde);
+}
+
+header > p {
+    margin: 0;
+    font-weight: 750;
+    letter-spacing: 0.03em;
+}
+
+header > p a {
+    color: var(--texto);
+    text-decoration: none;
+}
+
+header > a[href="#contenido"] {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+    padding: 0.5rem 0.75rem;
+    background: var(--fondo);
+    transform: translateY(-200%);
+}
+
+header > a[href="#contenido"]:focus {
+    transform: none;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.45rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: var(--fondo);
+}
+
+nav a[aria-current="page"] {
+    background: var(--violeta);
+    color: var(--texto);
+    font-weight: 700;
+}
+
+main {
+    width: min(66rem, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: clamp(1.75rem, 5vw, 4rem) 0;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    margin: 0 0 1.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    overflow-wrap: anywhere;
+}
+
+h1::after {
+    display: block;
+    width: 4rem;
+    height: 0.25rem;
+    margin-top: 0.75rem;
+    background: var(--morado);
+    content: "";
+}
+
+h2 {
+    margin-top: 0;
+    font-size: clamp(1.3rem, 3vw, 1.85rem);
+}
+
+h3, dt {
+    color: var(--morado);
+}
+
+main p, main li, dd {
+    color: var(--secundario);
+}
+
+main li + li {
+    margin-top: 0.6rem;
+}
+
+main section {
+    margin-block: 1.5rem;
+    padding-block: 1.5rem;
+}
+
+main section > :last-child {
+    margin-bottom: 0;
+}
+
+dt {
+    font-weight: 700;
+}
+
+dd {
+    margin: 0.25rem 0 1rem;
+}
+
+main section[aria-labelledby="titulo-referencias"] {
+    margin-top: 2.5rem;
+    overflow-wrap: anywhere;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    padding: 1.25rem 1rem;
+    border-top: 1px solid var(--borde);
+    color: var(--secundario);
+    text-align: center;
+}
+
+header > p a {
+    display: grid;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.marca-subtitulo {
+    margin-top: 0.35rem;
+    color: var(--secundario);
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+}
+
+header nav {
+    font-size: 0.9rem;
+}
+
+header nav a[aria-current="page"] {
+    background: #36254d;
+    color: var(--morado);
+}
+.recursos-visuales figure {
+    margin: 0 0 1.5rem;
+}
+
+.recursos-visuales img {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 0.45rem;
+}
+
+.recursos-visuales figcaption {
+    margin-top: 0.5rem;
+    color: var(--secundario);
+}
+
+.galeria-arte {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    gap: 1rem;
+}
+
+.tarjeta-arte {
+    overflow: hidden;
+    background: var(--fondo);
+    border: 1px solid var(--borde);
+    border-radius: 0.85rem;
+}
+
+.tarjeta-arte img {
+    height: clamp(10rem, 24vw, 14rem);
+    object-fit: contain;
+    background: var(--panel);
+}
+
+.tarjeta-arte-texto {
+    padding: 1rem;
+}
+
+.tarjeta-arte-texto h3 {
+    margin: 0;
+}
+
+.tarjeta-arte-texto .credito-arte {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}
+
+.portada-inicio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.portada-inicio p:last-child {
+    margin-bottom: 0;
+}
+
+.portada-inicio img {
+    display: block;
+    width: 100%;
+}
+
+.cronologia {
+    list-style: none;
+    padding: 0;
+}
+
+.cronologia li {
+    position: relative;
+    margin-left: 1rem;
+    padding: 0 0 1.75rem 2rem;
+    border-left: 2px solid var(--borde);
+}
+
+.cronologia li + li {
+    margin-top: 0;
+}
+
+.cronologia h3 {
+    margin: 0;
+}
+
+.cronologia p:last-child {
+    margin-bottom: 0;
+}
+
+.numero-etapa {
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    display: grid;
+    place-items: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 50%;
+    background: var(--violeta);
+    color: var(--texto);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.menu-temas details {
+    position: relative;
+}
+
+.menu-temas summary {
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.45rem;
+    color: var(--morado);
+    cursor: pointer;
+}
+
+.menu-temas summary:focus-visible {
+    outline: 2px solid var(--morado);
+    outline-offset: 4px;
+}
+
+.menu-temas .grupo-activo > summary,
+.menu-temas details[open] > summary {
+    background: #36254d;
+    font-weight: 700;
+}
+
+.menu-temas details > ul {
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    min-width: 10.5rem;
+    margin-top: 0.4rem;
+    padding: 0.4rem;
+    background: var(--panel);
+    border: 1px solid var(--borde);
+    border-radius: 0.55rem;
+}
+
+@media (max-width: 40rem) {
+    header {
+        gap: 0.65rem;
+        padding-block: 0.85rem;
+    }
+
+    .menu-temas {
+        width: 100%;
+    }
+
+    .menu-temas > ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+
+    .menu-temas a,
+    .menu-temas summary {
+        padding-inline: 0.6rem;
+    }
+
+    .menu-temas details > ul {
+        left: 0;
+        min-width: 9rem;
+    }
+}
+
+main .categoria-pagina {
+    margin: 0 0 0.45rem;
+    color: var(--morado);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.lista-tema {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    gap: 1.5rem;
+}
+
+.lista-tema dd {
+    margin-bottom: 0;
+}
+
+main .portada-inicio {
+    padding-block: clamp(1rem, 4vw, 2.5rem);
+}
+
+.guia-practica {
+    padding-block: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.filas-guia {
+    display: grid;
+    gap: 1.4rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+    padding: 0;
+    margin: 1.5rem 0 0;
+    list-style: none;
+}
+
+.filas-guia li {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-content: start;
+    gap: 0.75rem;
+}
+
+.filas-guia li + li {
+    margin-top: 0;
+}
+
+.guia-numero {
+    padding-top: 0.15rem;
+    color: var(--morado);
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.filas-guia h3 {
+    margin: 0 0 0.45rem;
+    color: var(--texto);
+    font-size: 1.05rem;
+}
+
+.filas-guia p {
+    margin: 0;
+}
+
+main section[aria-labelledby="titulo-referencias"] h2 {
+    font-size: 1.2rem;
+}
+
+.equipo-flujo {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    align-items: center;
+    gap: clamp(1rem, 4vw, 3rem);
+}
+
+.equipo-flujo img {
+    display: block;
+    width: min(100%, 26.25rem);
+    height: auto;
+    justify-self: center;
+}
+
+@media (max-width: 48rem) {
+    .equipo-flujo {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+.tabla-herramientas {
+    overflow-x: auto;
+    border: 1px solid var(--borde);
+    border-radius: 0.75rem;
+}
+
+.tabla-herramientas:focus-visible {
+    outline: 2px solid var(--morado);
+    outline-offset: 4px;
+}
+
+.tabla-herramientas table {
+    width: 100%;
+    min-width: 33rem;
+    border-collapse: collapse;
+}
+
+.tabla-herramientas caption,
+.tabla-herramientas th,
+.tabla-herramientas td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.tabla-herramientas caption,
+.tabla-herramientas thead {
+    background: var(--panel);
+    color: var(--morado);
+    font-weight: 700;
+}
+
+.tabla-herramientas tbody tr {
+    border-top: 1px solid var(--borde);
+}
+
+.tabla-herramientas caption,
+.tabla-herramientas thead th,
+.tabla-herramientas tbody td:first-child:not(:last-child) {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+main p:not(.categoria-pagina),
+main li,
+main dd,
+main figcaption,
+.tabla-herramientas tbody td:last-child {
+    text-align: justify;
+}
+
+.funciones-equipo li::marker,
+.funciones-equipo strong {
+    color: var(--morado);
+}
+
+
+.perfil-autora img {
+    width: min(100%, 15rem);
+    justify-self: end;
+    border: 1px solid var(--borde);
+    border-radius: 1rem;
+}
+
+.lista-en-filas {
+    display: block;
+}
+
+.lista-en-filas > div + div {
+    margin-top: 0.85rem;
+}
+
+.filas-guia.guia-vertical {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.revision-equipo li::marker {
+    color: var(--morado);
+    font-weight: 700;
+}
+
+.generos-distribucion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+    gap: 0 2.5rem;
+}
+
+.generos-distribucion section {
+    padding-block: 0;
+}
+
+.generos-distribucion details {
+    margin-bottom: 0.65rem;
+    padding: 0.65rem 0.85rem;
+    background: var(--panel);
+    border-radius: 0.45rem;
+}
+
+.generos-distribucion summary {
+    color: var(--morado);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.generos-distribucion summary:focus-visible {
+    outline: 2px solid var(--morado);
+    outline-offset: 3px;
+}
+
+.generos-distribucion details p {
+    margin-bottom: 0.2rem;
+}
+
+.collage-juegos .tarjeta-arte img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.tarjetas-inicio li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    background: var(--panel);
+    border: 1px solid var(--borde);
+    border-radius: 1rem;
+    text-align: left;
+}
+
+.tarjetas-inicio .guia-numero {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.tarjetas-inicio h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.tarjetas-inicio a {
+    margin-top: auto;
+    padding-top: 0.35rem;
+    align-self: flex-start;
+    font-weight: 700;
+}
+
+.boton-menu {
+    display: none;
+}
+
+@media (max-width: 40rem) {
+    header > p {
+        flex: 1;
+    }
+
+    .boton-menu:not([hidden]) {
+        display: grid;
+        place-items: center;
+        width: 2.75rem;
+        height: 2.75rem;
+        padding: 0;
+        background: var(--panel);
+        color: var(--morado);
+        border: 1px solid var(--borde);
+        border-radius: 0.45rem;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+
+    .boton-menu:focus-visible {
+        outline: 2px solid var(--morado);
+        outline-offset: 3px;
+    }
+
+    .boton-menu:not([hidden])[aria-expanded="false"] + .menu-temas {
+        display: none;
+    }
+}
+
+@media (max-width: 40rem) {
+    body:has(.boton-menu[aria-expanded="true"]) {
+        overflow: hidden;
+    }
+
+    header:has(.boton-menu[aria-expanded="true"]) {
+        position: fixed;
+        inset: 0;
+        z-index: 5;
+        align-content: start;
+        background: var(--panel);
+        overflow-y: auto;
+    }
+
+    .boton-menu[aria-expanded="true"] {
+        background: transparent;
+        border-color: transparent;
+        color: var(--texto);
+        font-size: 2rem;
+    }
+
+    .boton-menu[aria-expanded="true"] + .menu-temas > ul {
+        display: block;
+        margin-top: 0.75rem;
+    }
+
+    .boton-menu[aria-expanded="true"] + .menu-temas a,
+    .boton-menu[aria-expanded="true"] + .menu-temas summary {
+        padding: 0.85rem 0.6rem;
+        color: var(--texto);
+    }
+
+    .boton-menu[aria-expanded="true"] + .menu-temas details > ul {
+        position: static;
+        margin: 0.25rem 0 0.4rem 0.9rem;
+        padding: 0;
+        border: 0;
+    }
+}
