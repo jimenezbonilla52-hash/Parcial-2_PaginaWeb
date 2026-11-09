@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de mí | Desarrollo de videojuegos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#contenido">Saltar al contenido</a>
+        <p>
+            <a>
+                <span>Desarrollo de videojuegos</span>
+                <span class="marca-subtitulo">Diseño y programación</span>
+            </a>
+        </p>
+        <button class="boton-menu" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" hidden>
+            <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="menu-principal" class="menu-temas" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <details>
+                        <summary>Proceso</summary>
+                        <ul>
+                            <li><a href="etapas.html">Etapas</a></li>
+                            <li><a href="equipo.html">Equipo</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Creación</summary>
+                        <ul>
+                            <li><a href="arte.html">Arte y animación</a></li>
+                            <li><a href="programacion.html">Programación</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="generos.html">Géneros y plataformas</a></li>
+                <li><a href="autor.html" aria-current="page">Acerca de mí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <h1>Acerca de mí</h1>
+        <section class="portada-inicio perfil-autora">
+            <div>
+                <p>"Soy Evelin Jiménez tengo 23 años, estudiante de la Universidad Tecnológica de Panamá. Creé este sitio para el parcial de Desarrollo de Software V. Elegí el desarrollo de videojuegos porque me interesa conocer cómo una idea se convierte en algo que podemos jugar y cómo colaboran las personas encargadas del diseño, el arte y la programación".</p>
+            </div>
+            <img src="imagenes/foto-autor.jpg" alt="Retrato de Evelin Jiménez" width="240" height="320">
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollo de Software V · Universidad Tecnológica de Panamá</p>
+    </footer>
+</body>
+</html>
