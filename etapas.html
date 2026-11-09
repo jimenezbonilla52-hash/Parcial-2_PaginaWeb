@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etapas | Desarrollo de videojuegos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#contenido">Saltar al contenido</a>
+        <p>
+            <a>
+                <span>Desarrollo de videojuegos</span>
+                <span class="marca-subtitulo">Diseño y programación</span>
+            </a>
+        </p>
+        <button class="boton-menu" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" hidden>
+            <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="menu-principal" class="menu-temas" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <details class="grupo-activo">
+                        <summary>Proceso</summary>
+                        <ul>
+                            <li><a href="etapas.html" aria-current="page">Etapas</a></li>
+                            <li><a href="equipo.html">Equipo</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Creación</summary>
+                        <ul>
+                            <li><a href="arte.html">Arte y animación</a></li>
+                            <li><a href="programacion.html">Programación</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="generos.html">Géneros y plataformas</a></li>
+                <li><a href="autor.html">Acerca de mí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <p class="categoria-pagina">Proceso de desarrollo</p>
+        <h1>De la idea al lanzamiento</h1>
+        <p>Un videojuego cambia conforme el equipo lo prueba. Estas etapas ayudan a organizar el trabajo, aunque actividades como las pruebas pueden repetirse durante todo el proyecto.</p>
+        <section class="ruta-etapas">
+            <h2>Las cuatro fases del desarrollo</h2>
+            <ol class="cronologia">
+                <li>
+                    <span class="numero-etapa" aria-hidden="true">01</span>
+                    <h3>Preproducción</h3>
+                    <p>El equipo define el público, la plataforma y las mecánicas principales. También estima el tiempo y los recursos disponibles para decidir qué funciones caben en el proyecto.</p>
+                    <p><strong>Resultado.</strong> Un documento de diseño y un prototipo jugable. El prototipo permite evaluar los controles y las reglas antes de invertir en gráficos definitivos.</p>
+                </li>
+                <li>
+                    <span class="numero-etapa" aria-hidden="true">02</span>
+                    <h3>Producción</h3>
+                    <p>Programación implementa los sistemas, diseño construye los niveles y arte y sonido preparan los recursos. El equipo reúne el trabajo con frecuencia para detectar problemas de integración.</p>
+                    <p><strong>Resultado.</strong> Una versión jugable que reúne los sistemas, escenarios, gráficos, sonido e interfaz disponibles.</p>
+                </li>
+                <li>
+                    <span class="numero-etapa" aria-hidden="true">03</span>
+                    <h3>Pruebas y preparación del lanzamiento</h3>
+                    <p>Control de calidad comprueba que las funciones se comporten como se espera. También se revisa si el juego mantiene un rendimiento aceptable y funciona en los dispositivos previstos.</p>
+                    <p><strong>Resultado.</strong> Una versión candidata a publicación. Los fallos corregidos se vuelven a probar antes de distribuirla.</p>
+                </li>
+                <li>
+                    <span class="numero-etapa" aria-hidden="true">04</span>
+                    <h3>Publicación y mantenimiento</h3>
+                    <p>El equipo prepara la distribución, sigue los reportes de jugadores y decide qué problemas atender primero. Las actualizaciones pueden corregir errores o incorporar contenido.</p>
+                    <p><strong>Resultado.</strong> La versión publicada y, cuando corresponda, parches o actualizaciones.</p>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Por qué las etapas se pueden repetir</h2>
+            <p>Una prueba puede revelar que una instrucción resulta confusa o que el rendimiento baja en un dispositivo. El equipo observa el problema, ajusta el diseño o el código y vuelve a probar. Este ciclo también puede ocurrir durante la producción.</p>
+        </section>
+
+        <section class="detalle-tema">
+            <h2>Qué revisar antes del lanzamiento</h2>
+            <dl class="lista-tema lista-en-filas">
+                <div>
+                    <dt>Funcionalidad</dt>
+                    <dd>Completar los recorridos principales y probar qué ocurre al pausar, reiniciar o cambiar los ajustes.</dd>
+                </div>
+                <div>
+                    <dt>Rendimiento</dt>
+                    <dd>Revisar los tiempos de carga y observar si la imagen pierde fluidez en escenas exigentes.</dd>
+                </div>
+                <div>
+                    <dt>Compatibilidad</dt>
+                    <dd>Probar el juego con las pantallas, dispositivos y controles para los que se diseñó.</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="guia-practica">
+            <h2>Qué preguntas resuelve cada versión</h2>
+            <p>Cada versión ayuda a tomar una decisión antes de invertir más tiempo en el proyecto.</p>
+            <ul class="filas-guia">
+                <li>
+                    <span class="guia-numero" aria-hidden="true">01</span>
+                    <div>
+                        <h3>Prototipo</h3>
+                        <p>¿Se entiende la mecánica principal? Puede probarse con gráficos provisionales. Si el control resulta confuso, se ajusta antes de producir animaciones definitivas.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="guia-numero" aria-hidden="true">02</span>
+                    <div>
+                        <h3>Primera versión integrada</h3>
+                        <p>¿Funcionan juntos los sistemas? Permite revisar si los controles, la interfaz, las animaciones y el sonido responden en el momento esperado.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="guia-numero" aria-hidden="true">03</span>
+                    <div>
+                        <h3>Versión candidata a publicación</h3>
+                        <p>¿Se puede distribuir? El equipo revisa los fallos que bloquean la partida y vuelve a probar las correcciones en los dispositivos previstos.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="titulo-referencias">
+            <h2 id="titulo-referencias">Referencias bibliográficas</h2>
+            <ul>
+                <li id="algo"><a href="https://algocodingexperts.com/es/que-es-el-desarrollo-de-videojuegos/">Algo Coding Experts. ¿Qué es el desarrollo de videojuegos?</a></li>
+                <li id="campus"><a href="https://creativecampus.universidadeuropea.com/blog/desarrollo-videojuegos/">Creative Campus. Desarrollo de videojuegos: etapas y entornos.</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollo de Software V · Universidad Tecnológica de Panamá</p>
+    </footer>
+</body>
+</html>
