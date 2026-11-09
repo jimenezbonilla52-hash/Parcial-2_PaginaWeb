@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación | Desarrollo de videojuegos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#contenido">Saltar al contenido</a>
+        <p>
+            <a>
+                <span>Desarrollo de videojuegos</span>
+                <span class="marca-subtitulo">Diseño y programación</span>
+            </a>
+        </p>
+        <button class="boton-menu" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" hidden>
+            <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="menu-principal" class="menu-temas" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <details>
+                        <summary>Proceso</summary>
+                        <ul>
+                            <li><a href="etapas.html">Etapas</a></li>
+                            <li><a href="equipo.html">Equipo</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details class="grupo-activo">
+                        <summary>Creación</summary>
+                        <ul>
+                            <li><a href="arte.html">Arte y animación</a></li>
+                            <li><a href="programacion.html" aria-current="page">Programación</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="generos.html">Géneros y plataformas</a></li>
+                <li><a href="autor.html">Acerca de mí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <p class="categoria-pagina">Creación del juego</p>
+        <h1>Programación y herramientas</h1>
+        <p>La programación conecta las acciones del jugador con las reglas del juego. Por ejemplo, al pulsar la tecla de salto, el juego procesa la entrada y actualiza el movimiento del personaje.</p>
+        <section>
+            <h2>Métodos y herramientas de desarrollo</h2>
+            <p>Las herramientas se eligen según el tipo de juego, los conocimientos del equipo y las plataformas previstas.</p>
+
+            <div class="tabla-herramientas" role="region" aria-label="Comparación de herramientas" tabindex="0">
+                <table>
+                    <caption>Herramientas y sus usos en el desarrollo de videojuegos</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Categoría</th>
+                            <th scope="col">Herramienta</th>
+                            <th scope="col">Para qué se usa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4">Motores de videojuegos</td>
+                            <th scope="row">Unreal Engine</th>
+                            <td>Construye escenas 3D y permite programar su comportamiento con C++.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Unity</th>
+                            <td>Crea proyectos 2D y 3D, incluidos juegos móviles, y usa C# para programar sus componentes.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Godot</th>
+                            <td>Motor de código abierto para proyectos 2D y 3D. Incluye GDScript.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">CRYENGINE</th>
+                            <td>Crea entornos 3D detallados y permite ampliar su funcionamiento con C++.</td>
+                        </tr>
+                        <tr>
+                            <td>Lenguajes de programación</td>
+                            <th scope="row">C++, C# y JavaScript</th>
+                            <td>C++ y C# se usan con Unreal y Unity, respectivamente. JavaScript se puede combinar con Phaser para juegos de navegador.</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Arte digital</td>
+                            <th scope="row">Blender, Maya y 3ds Max</th>
+                            <td>Sirven para modelar y animar recursos tridimensionales.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Photoshop e Illustrator</th>
+                            <td>Permiten preparar fondos, iconos y otros elementos 2D.</td>
+                        </tr>
+                        <tr>
+                            <td>Control de versiones</td>
+                            <th scope="row">Git</th>
+                            <td>Registra cambios y permite trabajar en ramas, revisar modificaciones e integrarlas.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <h2>Sistemas que coordina la programación</h2>
+            <ul>
+                <li><strong>Física y colisiones.</strong> Determinan cómo se mueven los objetos y qué sucede cuando entran en contacto.</li>
+                <li><strong>Comportamiento de personajes.</strong> Define cómo reaccionan los personajes controlados por el juego ante cambios en su entorno.</li>
+                <li><strong>Interfaz.</strong> Actualiza en pantalla datos como la puntuación, el tiempo o la salud del personaje.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Entrada, reglas y respuesta en pantalla</h2>
+            <ol>
+                <li><strong>Entrada.</strong> El juego recibe una acción, como pulsar la tecla de salto.</li>
+                <li><strong>Reglas.</strong> El código comprueba si el personaje está en el suelo y actualiza su movimiento si puede saltar.</li>
+                <li><strong>Respuesta.</strong> El juego reproduce la animación y muestra la nueva posición del personaje.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Qué datos guarda la partida</h2>
+            <p>El estado de la partida reúne datos que cambian mientras se juega, como la posición del personaje, la puntuación y los objetivos completados. El código usa esos datos para actualizar la pantalla y decidir cuándo termina un nivel.</p>
+        </section>
+
+
+        <section class="detalle-tema">
+            <h2>Cómo elegir las herramientas del proyecto</h2>
+            <dl class="lista-tema lista-en-filas">
+                <div>
+                    <dt>Plataforma</dt>
+                    <dd>Define si el juego debe funcionar en el navegador, en un teléfono, en PC o en consola. Eso orienta la elección del motor y los controles.</dd>
+                </div>
+                <div>
+                    <dt>Alcance</dt>
+                    <dd>Identifica qué sistemas requiere el proyecto, como físicas 2D, escenas 3D o juego en línea. Prueba primero la función que presenta más dudas.</dd>
+                </div>
+                <div>
+                    <dt>Colaboración</dt>
+                    <dd>Acuerda cómo se nombran y organizan los recursos, quién revisa los cambios y cómo se registran los errores.</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="guia-practica">
+            <h2>Cómo se conectan los sistemas</h2>
+            <p>Una acción del jugador puede involucrar varios sistemas, cada uno con una responsabilidad concreta.</p>
+            <ul class="filas-guia guia-vertical">
+                <li>
+                    <span class="guia-numero" aria-hidden="true">01</span>
+                    <div>
+                        <h3>Controles</h3>
+                        <p>Traducen teclas, botones o gestos en acciones como mover, saltar o pausar. Así se puede asignar la misma acción a dispositivos de entrada distintos.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="guia-numero" aria-hidden="true">02</span>
+                    <div>
+                        <h3>Reglas y estado</h3>
+                        <p>Deciden qué acciones son válidas y registran sus consecuencias. Por ejemplo, al pausar se detiene la actualización de la partida y se habilita el menú.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="guia-numero" aria-hidden="true">03</span>
+                    <div>
+                        <h3>Pruebas del código</h3>
+                        <p>Se revisan casos normales y situaciones límite. Una prueba de pausa puede comprobar que el personaje mantenga su posición y que el sonido se reanude correctamente.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="titulo-referencias">
+            <h2 id="titulo-referencias">Referencias bibliográficas</h2>
+            <ul>
+                <li id="algo"><a href="https://algocodingexperts.com/es/que-es-el-desarrollo-de-videojuegos/">Algo Coding Experts. ¿Qué es el desarrollo de videojuegos?</a></li>
+                <li id="campus"><a href="https://creativecampus.universidadeuropea.com/blog/desarrollo-videojuegos/">Creative Campus. Desarrollo de videojuegos: etapas y entornos.</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollo de Software V · Universidad Tecnológica de Panamá</p>
+    </footer>
+</body>
+</html>
