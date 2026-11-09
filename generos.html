@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Géneros y plataformas | Desarrollo de videojuegos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#contenido">Saltar al contenido</a>
+        <p>
+            <a>
+                <span>Desarrollo de videojuegos</span>
+                <span class="marca-subtitulo">Diseño y programación</span>
+            </a>
+        </p>
+        <button class="boton-menu" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" hidden>
+            <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="menu-principal" class="menu-temas" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <details>
+                        <summary>Proceso</summary>
+                        <ul>
+                            <li><a href="etapas.html">Etapas</a></li>
+                            <li><a href="equipo.html">Equipo</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Creación</summary>
+                        <ul>
+                            <li><a href="arte.html">Arte y animación</a></li>
+                            <li><a href="programacion.html">Programación</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="generos.html" aria-current="page">Géneros y plataformas</a></li>
+                <li><a href="autor.html">Acerca de mí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <p class="categoria-pagina">Tipos de videojuegos</p>
+        <h1>Géneros y plataformas</h1>
+        <p>El género describe lo que el jugador hace durante la partida. La plataforma indica dónde puede jugar y condiciona aspectos como los controles, la interfaz y el rendimiento.</p>
+
+        <div class="generos-distribucion">
+            <section>
+                <h2>¿Qué tipo de juego es?</h2>
+                <p>Abre un género para ver qué hace el jugador y conocer dos ejemplos.</p>
+                <details open>
+                    <summary>Acción y aventura</summary>
+                    <p>Combina exploración, desafíos físicos y acertijos. En series como <cite>The Legend of Zelda</cite> y <cite>Uncharted</cite>, avanzar implica recorrer escenarios y superar obstáculos.</p>
+                </details>
+                <details>
+                    <summary>Rol (RPG)</summary>
+                    <p>El jugador desarrolla un personaje a medida que avanza. En <cite>Final Fantasy</cite> y <cite>The Witcher</cite>, las habilidades y el equipo influyen en cómo afrontar los retos.</p>
+                </details>
+                <details>
+                    <summary>Disparos (shooter)</summary>
+                    <p>Apuntar y combatir son acciones centrales. <cite>Call of Duty</cite> y <cite>Overwatch</cite> muestran distintas formas de organizar ese combate.</p>
+                </details>
+                <details>
+                    <summary>Simulación</summary>
+                    <p>Representa actividades o sistemas. En <cite>SimCity</cite> se administra una ciudad y en <cite>The Sims</cite> se toman decisiones sobre la vida cotidiana de los personajes.</p>
+                </details>
+                <details>
+                    <summary>Estrategia</summary>
+                    <p>Planificar y administrar recursos son parte del reto. <cite>Age of Empires</cite> y <cite>StarCraft</cite> requieren decidir qué construir, cuándo expandirse y cómo usar las unidades.</p>
+                </details>
+            </section>
+            <section>
+                <h2>¿Dónde se juega?</h2>
+                <p>La plataforma cambia la forma de controlar el juego y de presentar la información.</p>
+                <ul>
+                    <li><strong>Consola.</strong> En equipos como PlayStation, Xbox o Nintendo Switch, las acciones deben quedar al alcance de los botones del mando.</li>
+                    <li><strong>PC.</strong> El teclado y el ratón permiten usar atajos y hacer selecciones precisas. El equipo también considera distintas resoluciones y configuraciones.</li>
+                    <li><strong>Móvil.</strong> Los botones táctiles deben quedar al alcance de los dedos sin cubrir información importante de la partida.</li>
+                    <li><strong>Realidad virtual.</strong> El visor y los mandos de movimiento influyen en cómo se ubican y se alcanzan los objetos del entorno.</li>
+                </ul>
+                <p>Un juego de estrategia, por ejemplo, puede conservar sus reglas en PC y móvil, pero cambiar los atajos de teclado por menús táctiles.</p>
+            </section>
+        </div>
+
+        <section class="recursos-visuales">
+            <h2>Tres juegos, tres géneros</h2>
+            <p>Los géneros definen la experiencia de juego. La acción y aventura combina exploración y desafíos físicos, la simulación representa actividades o sistemas, y la estrategia requiere planificar y administrar recursos.</p>
+            <div class="galeria-arte collage-juegos">
+                <article class="tarjeta-arte">
+                    <img src="https://cdn.mos.cms.futurecdn.net/LjotQGtaTZTDtQaXek8vbU.jpg" alt="Imagen promocional de The Legend of Zelda: Tears of the Kingdom" loading="lazy">
+                    <div class="tarjeta-arte-texto">
+                        <h3>The Legend of Zelda: Tears of the Kingdom</h3>
+                        <p>Acción y aventura</p>
+                        <p class="credito-arte"><a href="https://www.imore.com/gaming/nintendo-switch/the-legend-of-zelda-tears-of-the-kingdom-is-the-sequel-to-breath-of-the-wild-launches-in-may-2023">Nintendo, vía iMore</a></p>
+                    </div>
+                </article>
+                <article class="tarjeta-arte">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222670/header.jpg" alt="Imagen promocional de The Sims 4" loading="lazy">
+                    <div class="tarjeta-arte-texto">
+                        <h3>The Sims 4</h3>
+                        <p>Simulación</p>
+                        <p class="credito-arte"><a href="https://store.steampowered.com/app/1222670/The_Sims_4/">Electronic Arts, vía Steam</a></p>
+                    </div>
+                </article>
+                <article class="tarjeta-arte">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/header.jpg" alt="Imagen promocional de Age of Empires II: Definitive Edition" loading="lazy">
+                    <div class="tarjeta-arte-texto">
+                        <h3>Age of Empires II: Definitive Edition</h3>
+                        <p>Estrategia</p>
+                        <p class="credito-arte"><a href="https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/">Xbox Game Studios, vía Steam</a></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="titulo-referencias">
+            <h2 id="titulo-referencias">Referencias bibliográficas</h2>
+            <ul>
+                <li id="algo"><a href="https://algocodingexperts.com/es/que-es-el-desarrollo-de-videojuegos/">Algo Coding Experts. ¿Qué es el desarrollo de videojuegos?</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollo de Software V · Universidad Tecnológica de Panamá</p>
+    </footer>
+</body>
+</html>
