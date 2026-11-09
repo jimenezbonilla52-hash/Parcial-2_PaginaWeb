@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo | Desarrollo de videojuegos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#contenido">Saltar al contenido</a>
+        <p>
+            <a>
+                <span>Desarrollo de videojuegos</span>
+                <span class="marca-subtitulo">Diseño y programación</span>
+            </a>
+        </p>
+        <button class="boton-menu" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" hidden>
+            <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="menu-principal" class="menu-temas" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <details class="grupo-activo">
+                        <summary>Proceso</summary>
+                        <ul>
+                            <li><a href="etapas.html">Etapas</a></li>
+                            <li><a href="equipo.html" aria-current="page">Equipo</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Creación</summary>
+                        <ul>
+                            <li><a href="arte.html">Arte y animación</a></li>
+                            <li><a href="programacion.html">Programación</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="generos.html">Géneros y plataformas</a></li>
+                <li><a href="autor.html">Acerca de mí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <p class="categoria-pagina">Proceso de desarrollo</p>
+        <h1>Quién hace qué en un videojuego</h1>
+        <p>Crear un juego implica coordinar decisiones de diseño, programación, arte, sonido, pruebas y producción. En proyectos pequeños, una persona puede asumir varias funciones.</p>
+        <ul class="funciones-equipo">
+            <li><strong>Diseño de juego</strong><br>Define las reglas y el reto. También organiza la dificultad y el ritmo de los niveles.</li>
+            <li><strong>Programación</strong><br>Implementa los controles, las colisiones y las reglas del juego. También investiga fallos y mejora el rendimiento.</li>
+            <li><strong>Arte y animación</strong><br>Crea personajes, escenarios e indicadores. Prepara movimientos y señales visuales para que el jugador reconozca lo que está ocurriendo.</li>
+            <li><strong>Sonido</strong><br>Diseña señales auditivas y trabaja en la ambientación del nivel.</li>
+            <li><strong>Control de calidad (QA)</strong><br>Reproduce y documenta problemas. Registra los pasos necesarios para que el equipo pueda repetir el fallo.</li>
+            <li><strong>Producción</strong><br>Organiza las tareas y coordina el trabajo entre áreas para que el equipo pueda probar versiones completas del juego.</li>
+        </ul>
+
+        <div class="equipo-flujo">
+            <div>
+                <section>
+                    <h2>Cómo colaboran las áreas</h2>
+                    <p>Diseño define las reglas y prioridades del nivel. Arte y sonido preparan los recursos, programación los integra y control de calidad comprueba que las acciones del jugador produzcan el resultado esperado.</p>
+                    <p>Producción organiza qué tareas dependen de otras. El equipo puede usar recursos provisionales para probar una mecánica mientras se completa el arte definitivo.</p>
+                </section>
+                <section>
+                    <h2>Cómo se documenta un error</h2>
+                    <p>Un reporte identifica la versión del juego y el dispositivo, enumera los pasos para reproducir el fallo y describe el resultado esperado y el observado. Una captura o un registro del sistema puede ayudar a localizar la causa.</p>
+                    <p>Cuando programación entrega una corrección, control de calidad repite la prueba y revisa las funciones relacionadas para detectar posibles efectos secundarios.</p>
+                </section>
+            </div>
+            <img src="imagenes/flujo-trabajo.png" width="1536" height="1024" alt="Flujo de trabajo: diseño define las reglas, arte y sonido crean los recursos, programación los integra y control de calidad verifica el resultado." loading="lazy">
+        </div>
+
+        <section>
+            <h2>De una tarea a una versión jugable</h2>
+            <p>Un cambio en el menú de pausa permite ver cómo se coordina el equipo durante una entrega.</p>
+            <ol class="revision-equipo">
+                <li><strong>Planificación.</strong> Producción acuerda qué opciones entran en la próxima versión. Diseño define las acciones y arte prepara los botones y sus estados.</li>
+                <li><strong>Integración.</strong> Programación conecta los botones con sus acciones y verifica que abrir el menú detenga la partida y que cerrarlo la reanude.</li>
+                <li><strong>Revisión.</strong> Control de calidad prueba el menú con los mandos previstos. El equipo prioriza los fallos que impiden continuar y vuelve a probarlos cuando estén corregidos.</li>
+            </ol>
+        </section>
+
+        <section aria-labelledby="titulo-referencias">
+            <h2 id="titulo-referencias">Referencias bibliográficas</h2>
+            <ul>
+                <li id="animum"><a href="https://www.animum3d.com/blog/como-se-crean-videojuegos/">Animum. ¿Cómo se crean los videojuegos? Descubre las áreas que lo hacen posible.</a></li>
+                <li id="unir"><a href="https://peru.unir.net/revista/ingenieria/desarrollador-videojuegos/">UNIR Perú. Desarrollador de videojuegos: qué es, funciones y formación.</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollo de Software V · Universidad Tecnológica de Panamá</p>
+    </footer>
+</body>
+</html>
